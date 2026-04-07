@@ -70,7 +70,7 @@ const itemVariants = {
 
 export default function Contact() {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center px-6 py-8 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-6 py-8 relative overflow-hidden overflow-x-hidden">
       {/* Ambient */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-[#c9b99a]/[0.04] blur-[100px] pointer-events-none" />
 
@@ -137,7 +137,7 @@ export default function Contact() {
         </motion.div>
 
         {/* Social links */}
-        <motion.div variants={itemVariants} className="flex justify-center gap-3">
+        <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-xl mx-auto">
           {socials.map(({ label, icon: Icon, href }) => (
             <a
               key={label}
