@@ -49,6 +49,7 @@ const rowVariants = {
 
 export default function Expertise() {
   const [hovered, setHovered] = useState<string | null>(null);
+  const [active, setActive] = useState("01");
 
   return (
     <div className="w-full h-full flex items-center justify-center px-6 py-8">
@@ -81,33 +82,34 @@ export default function Expertise() {
           className="divide-y divide-white/[0.04]"
         >
           {expertiseData.map((item) => {
-            const isHovered = hovered === item.number;
+            const isActive = hovered === item.number || active === item.number;
             return (
               <motion.div
                 key={item.number}
                 variants={rowVariants}
                 onMouseEnter={() => setHovered(item.number)}
                 onMouseLeave={() => setHovered(null)}
+                onClick={() => setActive(item.number)}
                 className="group py-4 grid grid-cols-[40px_1fr] md:grid-cols-[60px_1fr_auto] gap-3 md:gap-8 items-start md:items-center"
                 data-cursor
               >
                 {/* Number */}
-                <span className={`text-display font-black text-xl transition-colors duration-300 ${isHovered ? "text-[#c9b99a]" : "text-[#222]"}`}>
+                <span className={`text-display font-black text-xl transition-colors duration-300 ${isActive  ? "text-[#c9b99a]" : "text-[#222]"}`}>
                   {item.number}
                 </span>
 
                 {/* Content */}
                 <div className="min-w-0">
-                  <h3 className={`text-base md:text-lg font-bold tracking-tight transition-colors duration-300 md:truncate ${isHovered ? "text-[#f0ede8]" : "text-[#6b6b6b]"}`}>
+                  <h3 className={`text-base md:text-lg font-bold tracking-tight transition-colors duration-300 md:truncate ${isActive  ? "text-[#f0ede8]" : "text-[#6b6b6b]"}`}>
                     {item.title}
                   </h3>
-                  <p className={`mt-1 text-sm leading-relaxed max-w-lg transition-all duration-300 ${isHovered ? "text-[#4a4a4a] opacity-100 max-h-[80px]" : "text-[#2a2a2a] opacity-0 max-h-0 overflow-hidden md:opacity-100 md:max-h-[48px]"}`}>
+                  <p className={`mt-1 text-sm leading-relaxed max-w-lg transition-all duration-300 ${isActive  ? "text-[#4a4a4a] opacity-100 max-h-[80px]" : "text-[#2a2a2a] opacity-0 max-h-0 overflow-hidden md:opacity-100 md:max-h-[48px]"}`}>
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Tags */}
-                <div className={`hidden md:flex flex-wrap gap-1.5 justify-end max-w-[220px] transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}>
+                <div className={`hidden md:flex flex-wrap gap-1.5 justify-end max-w-[220px] transition-opacity duration-300 ${isActive  ? "opacity-100" : "opacity-0"}`}>
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
