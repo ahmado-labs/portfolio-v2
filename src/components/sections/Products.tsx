@@ -176,7 +176,7 @@ export default function Products() {
               <div className="relative rounded-[2rem] overflow-hidden border border-white/[0.06] bg-[#0a0a0a] p-10 md:p-16 text-center group">
                 {/* ✅ BACKGROUND LOGO (TAMBAHKAN DI SINI) */}
                 <img
-                  src="/logoabda.png"
+                  src="/Logoabda.png"
                   alt="logo"
                   className="absolute right-0 top-1/2 translate-x-[10%] -translate-y-[30%] w-[420px] opacity-[0.10]"
                 />
