@@ -107,7 +107,7 @@ export default function Contact() {
           className="flex flex-col sm:flex-row justify-center gap-3 mb-8"
         >
           <MagneticBtn
-            href="mailto:emailkamu@gmail.com"
+            href="mailto:widaahmat@gmail.com"
             className="btn-shimmer group inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#e8e0d4] text-[#080808] rounded-full font-bold text-sm shadow-xl shadow-[#e8e0d4]/8 hover:bg-white transition-all duration-300"
           >
             <Mail size={16} />
