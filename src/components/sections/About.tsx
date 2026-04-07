@@ -132,7 +132,7 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-2.5">
                   <div className="col-span-2 p-5 rounded-[1.5rem] bg-[#0f0f0f] border border-white/[0.05]">
                     <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                      Saya adalah <span className="text-[#e8e0d4] font-medium">Santri & Multimedia Producer</span> yang berfokus pada solusi multimedia dan identitas visual.
+                      Seorang <span className="text-[#e8e0d4] font-medium">Santri & Multimedia Producer</span> yang berfokus pada solusi multimedia dan identitas visual.
                     </p>
                   </div>
 
@@ -186,7 +186,7 @@ export default function About() {
               </h2>
 
               <p className="text-[#5a5a5a] text-base leading-relaxed italic border-l-2 border-[#c9b99a]/30 pl-5">
-                Perjalanan kreatif ini bermula dari perancangan desain grafis dan aset visual untuk pasar microstock,
+                Perjalanan kreatif ini bermula dari perancangan desain grafis dan aset visual untuk pasar digital,
                 serta pengembangan berbagai media publikasi digital maupun cetak yang kemudian berkembang ke ranah produksi video secara utuh—dari tahap pra hingga pascaproduksi,
                 bersamaan dengan pengelolaan operasional live streaming serta strategi konten dan branding di media sosial.
               </p>

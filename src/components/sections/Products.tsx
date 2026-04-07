@@ -74,6 +74,7 @@ export default function Products() {
                 >
                   <p className="text-[#5a5a5a] text-sm md:text-base leading-relaxed max-w-md">
                     Kumpulan aset digital yang dirancang dengan pendekatan strategis — siap digunakan untuk kebutuhan branding, konten, dan eksplorasi visual.
+                    Tertarik untuk menggunakannya? Silakan eksplorasi.
                   </p>
 
                 </motion.div>
