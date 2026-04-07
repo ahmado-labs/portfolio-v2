@@ -45,8 +45,8 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
-};
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeInOut" } },
+} as any;
 
 export default function SelectedWork() {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -59,7 +59,7 @@ export default function SelectedWork() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="mb-6 flex items-end justify-between"
         >
           <div>

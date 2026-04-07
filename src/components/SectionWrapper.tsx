@@ -16,7 +16,7 @@ export const fadeUpVariants = {
     y: 0,
     transition: {
       duration: 0.85,
-      ease: [0.16, 1, 0.3, 1] as [number, number, number, number], // expo out
+      ease: "easeInOut"// expo out
     },
   },
 };
@@ -38,7 +38,7 @@ export const staggerItemVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+      ease: "easeInOut"
     },
   },
 };
@@ -50,7 +50,7 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   return (
     <motion.div
-      variants={fadeUpVariants}
+      variants={fadeUpVariants as any}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}

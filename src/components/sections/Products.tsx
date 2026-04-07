@@ -37,8 +37,8 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
-};
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } },
+} as any;
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState<"microstock" | "font">("microstock");
@@ -51,7 +51,7 @@ export default function Products() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
         >
           <div>
@@ -116,7 +116,7 @@ export default function Products() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
             >
               <motion.div
                 variants={containerVariants}
@@ -171,7 +171,7 @@ export default function Products() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
             >
               <div className="relative rounded-[2rem] overflow-hidden border border-white/[0.06] bg-[#0a0a0a] p-10 md:p-16 text-center group">
                 {/* ✅ BACKGROUND LOGO (TAMBAHKAN DI SINI) */}

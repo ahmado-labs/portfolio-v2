@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Variants } from "framer-motion";
 
 const expertiseData = [
   {
@@ -35,9 +36,16 @@ const containerVariants = {
 };
 
 const rowVariants = {
-  hidden: { opacity: 0, x: -16 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
-};
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut", // ✅ FIX
+    },
+  },
+} as any;
 
 export default function Expertise() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -50,7 +58,7 @@ export default function Expertise() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="mb-6 flex items-end justify-between"
         >
           <div>
