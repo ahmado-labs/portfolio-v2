@@ -137,6 +137,8 @@ export default function Contact() {
             <a
               key={label}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               data-cursor
               aria-label={label}
               className="group flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.06] text-[#3a3a3a] hover:text-[#e8e0d4] hover:border-white/[0.14] transition-all duration-300 text-sm font-bold"
