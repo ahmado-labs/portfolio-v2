@@ -42,7 +42,7 @@ function MagneticBtn({
 }
 
 const socials = [
-  { label: "Instagram", icon: Tv2,   href: "#" },
+  { label: "Instagram", icon: Tv2,   href: "https://www.instagram.com/ahma_doee/" },
   { label: "LinkedIn",  icon: Globe, href: "#" },
 ];
 
