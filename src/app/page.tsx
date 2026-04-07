@@ -25,7 +25,7 @@ export default function Home() {
         {/* ABOUT */}
         <section
           id="about"
-          className="sticky top-0 h-screen w-full z-[2] overflow-hidden bg-[#080808] border-t border-white/[0.04] shadow-[0_-40px_80px_rgba(0,0,0,0.9)]"
+          className="relative lg:sticky lg:top-0 h-auto lg:h-screen w-full z-[2] overflow-hidden bg-[#080808] border-t border-white/[0.04] shadow-[0_-40px_80px_rgba(0,0,0,0.9)] py-20 lg:py-0"
         >
           <About />
         </section>

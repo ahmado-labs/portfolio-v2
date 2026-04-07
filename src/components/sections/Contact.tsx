@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, MessageCircle, Globe, Tv2 } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle, Globe, Tv2, Tv2Icon, TvMinimalIcon, TvMinimalPlayIcon, Radio } from "lucide-react";
 import { useRef, useState } from "react";
 import { Variants } from "framer-motion";
+import { FaInstagram, FaFacebook, FaLinkedin, FaGithub  } from "react-icons/fa";
+import { SiThreads } from "react-icons/si";
 
 function MagneticBtn({
   children,
@@ -42,8 +44,11 @@ function MagneticBtn({
 }
 
 const socials = [
-  { label: "Instagram", icon: Tv2,   href: "https://www.instagram.com/ahma_doee/" },
-  { label: "LinkedIn",  icon: Globe, href: "#" },
+  { label: "Instagram", icon: FaInstagram, href: "https://www.instagram.com/ahma_doee/" },
+  { label: "Facebook",  icon: FaFacebook,  href: "https://web.facebook.com/wida.ahmat/" },
+  { label: "Threads",   icon: SiThreads,   href: "https://www.threads.com/@ahma_doee" },
+  { label: "LinkedIn",  icon: FaLinkedin,  href: "https://www.linkedin.com/in/ahmad-oe" },
+  { label: "GitHub",    icon: FaGithub,    href: "https://github.com/ahmado-labs" }, 
 ];
 
 const containerVariants = {
