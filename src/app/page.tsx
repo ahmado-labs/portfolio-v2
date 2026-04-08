@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Expertise from "@/components/sections/Expertise";
@@ -9,6 +11,11 @@ import ScrollProgress from "@/components/ScrollProgress";
 import CustomCursor from "@/components/CustomCursor";
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <CustomCursor />
