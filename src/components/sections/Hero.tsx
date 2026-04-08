@@ -186,7 +186,7 @@ export default function Hero() {
             <div className="absolute bottom-6 left-6 right-6">
               <div className="glass rounded-2xl px-4 py-3">
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#6b6b6b]">A santri dedicated to</p>
-                <p className="text-sm font-bold text-[#e8e0d4] mt-0.5">ilm & multimedia production</p>
+                <p className="text-sm font-bold text-[#e8e0d4] mt-0.5">ilm & Multimedia Production</p>
               </div>
             </div>
 
