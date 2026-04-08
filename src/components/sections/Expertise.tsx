@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Variants } from "framer-motion";
 
 const expertiseData = [
@@ -50,6 +50,18 @@ const rowVariants = {
 export default function Expertise() {
   const [hovered, setHovered] = useState<string | null>(null);
   const [active, setActive] = useState("01");
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsDesktop(window.innerWidth >= 1024); // lg
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
 
   return (
     <div className="w-full h-full flex items-center justify-center px-6 py-8">
@@ -82,7 +94,9 @@ export default function Expertise() {
           className="divide-y divide-white/[0.04]"
         >
           {expertiseData.map((item) => {
-            const isActive = hovered === item.number || active === item.number;
+            const isActive = isDesktop
+              ? hovered === item.number
+              : active === item.number;
             return (
               <motion.div
                 key={item.number}
