@@ -13,6 +13,9 @@ import CustomCursor from "@/components/CustomCursor";
 export default function Home() {
 
   useEffect(() => {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
     window.scrollTo(0, 0);
   }, []);
 
