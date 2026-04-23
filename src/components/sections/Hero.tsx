@@ -170,7 +170,7 @@ export default function Hero() {
             {/* Gambar Profil bebas: */}
             
             <Image
-              src="/bitmap.png"
+              src="/skin4.png"
               alt="Multimedia production"
               fill
               className="object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
