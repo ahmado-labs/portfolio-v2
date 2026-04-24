@@ -172,7 +172,7 @@ export default function About() {
               </h2>
 
               <p className="text-[#5a5a5a] text-base leading-relaxed italic border-l-2 border-[#c9b99a]/30 pl-5">
-                Bagi saya, desain adalah bahasa sunyi yang berbicara tanpa suara—lahir dari rasa, tumbuh dalam imajinasi, lalu menjelma menjadi bentuk yang dapat ditangkap oleh mata dan dirasakan oleh hati...
+                Bagi saya, desain adalah bahasa sunyi yang berbicara tanpa suara, lahir dari rasa, tumbuh dalam imajinasi, lalu menjelma menjadi bentuk yang dapat ditangkap oleh mata dan dirasakan oleh hati...
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function About() {
 
               <p className="text-[#5a5a5a] text-base leading-relaxed italic border-l-2 border-[#c9b99a]/30 pl-5">
                 Perjalanan kreatif ini bermula dari perancangan desain grafis dan aset visual untuk pasar digital,
-                serta pengembangan berbagai media publikasi digital maupun cetak yang kemudian berkembang ke ranah produksi video secara utuh—dari tahap pra hingga pascaproduksi,
+                serta pengembangan berbagai media publikasi digital maupun cetak yang kemudian berkembang ke ranah produksi video secara utuh, dari tahap pra hingga pascaproduksi,
                 bersamaan dengan pengelolaan operasional live streaming serta strategi konten dan branding di media sosial.
               </p>
             </div>
