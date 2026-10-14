@@ -113,7 +113,7 @@ export default function About() {
                 </h2>
 
                 <p className="text-[#5a5a5a] text-base leading-relaxed italic border-l-2 border-[#c9b99a]/30 pl-5 mb-6">
-                  "Saya percaya desain bukan hanya soal estetika, tapi tentang bagaimana sebuah brand bisa terasa dan diingat."
+                  "Desain yang baik adalah yang mampu membangun karakter sebuah brand, menyampaikan pesan dengan jelas, dan meninggalkan kesan yang mudah diingat."
                 </p>
 
                 <div className="flex gap-8 pt-5 border-t border-white/[0.05]">
